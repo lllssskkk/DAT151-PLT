@@ -1,9 +1,6 @@
 { pkgs ? import <nixpkgs> { } }:
-let
-  myScript = pkgs.writeScriptBin "lsk" ''
-    figlet 
-  '';
-in pkgs.mkShell {
+
+pkgs.mkShell {
   name = "lab1";
   buildInputs = with pkgs; [
     ghc

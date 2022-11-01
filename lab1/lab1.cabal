@@ -12,7 +12,6 @@ extra-doc-files: CHANGELOG.md
 
 common common-extensions
   default-extensions:
-    NoImplicitPrelude
     BangPatterns
     DataKinds
     DeriveAnyClass
@@ -60,7 +59,6 @@ common common-ghc-options
     ghc-options: -Werror
 
 executable lab1
-
   import:           common-ghc-options
   import:           common-extensions
 
